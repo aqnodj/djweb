@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Michroma", sans-serif;
+    height: 100vh;
+  }
+  
+  .container {
+    background: linear-gradient(to right,darkred, black, darkred);
+    color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: 40px;
+    font-family: 'YourAmazingFont', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  
+  .loading-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, black, red, black);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    color: #191654;
+  }
+  
+  #svg {
+    height: 100%;
+    width: 100%;
+    stroke: white;
+    fill-opacity: 0;
+    stroke-width: 3px;
+    stroke-dasharray: 4500;
+    animation: draw 8s ease;
+  }
+  
+  @keyframes draw {
+    0% {
+      stroke-dashoffset: 4500;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  .name-container {
+    height: 30px;
+    overflow: hidden;
+    margin-top: -10px;
+  }
+  
+  .logo-name {
+    color: grey;
+    font-size: 20px;
+    letter-spacing: 12px;
+    text-transform: uppercase;
+    margin-left: 20px;
+    font-weight: bolder;
+  }
+  
+  .smoky-text {
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      text-align: center;
+      font-size: 60px;
+      color: white;
+      text-shadow: 0 0 10px white;
+      animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow {
+      0% {
+          text-shadow: 0 0 10px red;
+      }
+      100% {
+          text-shadow: 0 0 20px red;
+          color: red;
+      }
+  }
+  .loading-page img {
+      width: 200px; 
+      height: auto; 
+  }
+  .loading-page img[src="deejanm.svg"] {
+      width: 800px; 
+      height: auto;
+  }

@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+nav {
+    background-color:black;
+    color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 10px; 
+}
+
+nav a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    padding: 10px 15px; 
+    color: white;
+}
+
+nav a:hover {
+    background-color: darkgray;
+}
+
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-top: 100px;
+    color: red;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+p {
+    line-height: 1.6;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: darkred;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+.info {
+    flex: 1; 
+}
+
+.image-container {
+    flex: 1; 
+    margin-top: 70px;
+}
+
+img {
+    width: 100%; 
+    animation: slideInFromLeft 1s ease-out;
+}
+main {
+    background-image: url('profilebg.jpeg');
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+}
+
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.info dl {
+    font-size:20px; 
+}
+
+.info dt {
+    font-weight: bold; 
+    margin-top: 10px;
+    color: white;
+}
+
+.info dd {
+    margin-left: 0; 
+    margin-bottom: 10px;
+    font-style: italic;
+    color: wheat;
+}
+
+.info dd i {
+    font-style: italic;
+    color: wheat;
+}
+label.logo{
+    color: red;
+    font-size: 35px;
+}
+.info dd a{
+    color: wheat;
+}

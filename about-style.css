@@ -1,0 +1,205 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+nav {
+    background-color: #203a43;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+.about-section {
+    text-align: center;
+}
+
+.icon img {
+    width: 100px;
+}
+
+.name {
+    margin-top: 20px;
+    color: white;
+}
+
+.content {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto; 
+    max-width: 800px; 
+    font-size: 18px;
+    text-align: center;
+    color: wheat;
+}
+.bio, .achievements, .sports, .contact-info, .esports {
+    margin: 50px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.bio h3, .achievements h3, .sports h3, .contact-info h3,.esports h3 {
+    color: red;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.bio p, .achievements ul, .sports ul, .contact-info ul,.esports ul {
+    color: white;
+    font-size: 16px;
+}
+
+.achievements ul, .sports ul,.esports ul {
+    margin-left: 20px;
+}
+
+.sports ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.sports ul li {
+    margin-bottom: 10px;
+}
+
+.sports ul li::before {
+    content: "\2022"; 
+    color: #ff9900; 
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.contact-info ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.contact-info ul li {
+    margin-bottom: 10px;
+}
+
+.contact-info ul li a {
+    color: red;
+    text-decoration: none;
+}
+
+.contact-info ul li a:hover {
+    color: whitesmoke;
+}
+
+
+nav {
+    background-color: black;
+    color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 10px; 
+}
+
+nav a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    padding: 10px 15px; 
+    color: white;
+}
+
+nav a:hover {
+    background-color: red;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: darkred;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+main {
+    background-image: url('profilebg.jpeg');
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+h1, h2 {
+    text-align: center;
+    margin-top: 100px;
+    color: red;
+}
+
+label.logo {
+    color: red;
+    font-size: 35px;
+}
+.icon img {
+    width: 100px; 
+    border-radius: 50%;
+    border: 5px solid transparent;
+    animation: blinkBorder 1s infinite alternate; 
+}
+
+@keyframes blinkBorder {
+    0% {
+        border-color: transparent;
+    }
+    100% {
+        border-color: red;
+    }
+}
