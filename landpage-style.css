@@ -22,9 +22,6 @@ body {
   flex-shrink: 0; 
   padding: 20px;
   size: 200px;
-  max-width: 100%; /* Set the maximum width to prevent zooming */
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .about-button {
@@ -101,8 +98,8 @@ a.btn:hover {
   height: 300px;
 
 }
-.img-fluid {
-  max-width: 100%;
-  height: auto;
+.container {
+  max-width: 800px; /* Decrease the maximum width of the container */
+  margin: 0 auto; /* Center the container horizontally */
 }
 
