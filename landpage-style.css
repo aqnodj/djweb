@@ -96,7 +96,5 @@ a.btn:hover {
 
 }
 .container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 15px; /* Add padding to the left and right */
+  size: 200px;
 }
