@@ -23,7 +23,7 @@ This website is built using the following technologies:
 
 
 You may access this personal website with the link below:
-www.somelink.com
+https://aqnodj.github.io/djweb/
 
 ## Contributing
 
