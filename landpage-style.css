@@ -95,10 +95,7 @@ a.btn:hover {
   height: auto; 
 
 }
-.container {
-  max-width: 800px; /* Adjust this value to your desired width */
-  margin: 0 auto; /* This centers the container horizontally */
-}
+
 .col-md-6 {
   max-width: 45%; /* Adjust this value to your desired width */
 }
