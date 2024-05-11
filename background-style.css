@@ -37,14 +37,11 @@ nav a:hover {
 }
 
 footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: darkred;
+    background-color: red;
     color: white;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
+    margin-top: auto; 
 }
 
 main {
@@ -144,5 +141,16 @@ label.logo{
     margin-right: 10px;
     margin-top: -5px;
 }
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}
 
+@media only screen and (min-width: 769px) {
+    body {
+        font-size: 16px;
+    }
+}
+    
 
